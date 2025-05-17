@@ -1,6 +1,6 @@
 import { RiArrowUpDoubleFill, } from 'react-icons/ri'
 import { TbCircleArrowUpRight } from 'react-icons/tb'
-import allProjects from "../utilities/Projects"
+import {allProjects} from "../utilities/Projects.js"
 import { NavLink } from 'react-router-dom'
 import { FaCode } from 'react-icons/fa'
 import { BsArrowUpRightCircle } from 'react-icons/bs'
