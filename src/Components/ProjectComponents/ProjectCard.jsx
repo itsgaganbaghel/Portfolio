@@ -4,6 +4,7 @@ import { IoEarth } from 'react-icons/io5'
 import { NavLink } from 'react-router-dom'
 
 const ProjectCard = ({ project, projectNumber, }) => {
+
     return (
         <section className='w-[37vw] h-fit flex flex-col gap-5 py-6 border-2 border-secondary rounded-xl px-4'>
             <section className=''>

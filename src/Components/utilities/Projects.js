@@ -1,12 +1,3 @@
-import studyNotion from "../../assets/Projects/FullStack/studyNotion.png"
-import rhythm from "../../assets/Projects/FullStack/Rhythm.png"
-import portfolio from "../../assets/Projects/FullStack/portfolio.png"
-import cara from "../../assets/Projects/React/cara.png"
-import countryGuide from "../../assets/Projects/React/countryGuide.png"
-import razorpay from "../../assets/Projects/TailwindCss/razorpay.png"
-import gagshi from "../../assets/Projects/TailwindCss/travel.png"
-import discord from "../../assets/Projects/TailwindCss/Discord.png"
-import parallax from "../../assets/Projects/HtmlCss/parallax.png"
 
 export let allProjects = [
   {
@@ -18,7 +9,7 @@ export let allProjects = [
         "category": "FullStackProjects",
         "position": "sticky top-10",
         "isFeatured": true,
-        "src": { studyNotion },
+        "src": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747493877/krnivrtswkitdssetzjm.png",
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -36,7 +27,7 @@ export let allProjects = [
         "description": "A modern music streaming platform inspired by Spotify and JioSaavn, built with React.js, Tailwind CSS, and Firebase. This platform allows users to stream music, create playlists, browse trending songs, and enjoy a seamless music experience. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": { rhythm },
+        "src": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747493529/hnnaxfsf2ebtry5ilxpi.png",
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -48,7 +39,7 @@ export let allProjects = [
         "description": "A sleek and responsive personal portfolio website built with React.js, Tailwind CSS, and Framer Motion, designed to showcase projects, skills, and experience. The platform features smooth page transitions, interactive project displays, and a contact form, offering a modern and engaging user experience. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": { portfolio },
+        "src": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747493577/edxqnqumerpbsdoqp9pz.png",
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -68,8 +59,9 @@ export let allProjects = [
         "name": "Study Notion",
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
+        "position": "sticky top-10",
         "isFeatured": true,
-        "src": { studyNotion },
+        "src": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747493877/krnivrtswkitdssetzjm.png",
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -84,37 +76,29 @@ export let allProjects = [
       },
       {
         "name": "Rhythm",
-        "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
+        "description": "A modern music streaming platform inspired by Spotify and JioSaavn, built with React.js, Tailwind CSS, and Firebase. This platform allows users to stream music, create playlists, browse trending songs, and enjoy a seamless music experience. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": { rhythm },
+        "src": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747493529/hnnaxfsf2ebtry5ilxpi.png",
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
-        "TechStack": [
-          "Tailwind Css",
-          "React Js",
-          "Node Js",
-          "Express Js",
-          "Mongo DB"
-        ],
+        "TechStack": ["React Js", "Redux", "Tailwind Css", "Firebase"],
         "CoreStack": ["React JS", "Tailwind Css", "Firebase"]
       },
       {
         "name": "Portfolio",
-        "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
+        "description": "A sleek and responsive personal portfolio website built with React.js, Tailwind CSS, and Framer Motion, designed to showcase projects, skills, and experience. The platform features smooth page transitions, interactive project displays, and a contact form, offering a modern and engaging user experience. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": { portfolio },
+        "src": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747493577/edxqnqumerpbsdoqp9pz.png",
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
         "TechStack": [
           "Tailwind Css",
           "React Js",
-          "Node Js",
-          "Express Js",
-          "Mongo DB"
+          "Framer Motion"
         ],
         "CoreStack": ["React JS", "Tailwind Css", "Firebase", "motion"]
       }
@@ -128,7 +112,7 @@ export let allProjects = [
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": { cara },
+        "src": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747493716/tckjk0dfubtnb4op7m1k.png",
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -140,7 +124,7 @@ export let allProjects = [
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": { countryGuide },
+        "src":"https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747494836/gtck6fr6geu0sfpkrsdp.png" ,
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -163,7 +147,7 @@ export let allProjects = [
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": { razorpay },
+        "src": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747493714/ejcpboidf8zyrh55u3t1.png",
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -175,7 +159,7 @@ export let allProjects = [
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": { gagshi },
+        "src": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747493620/txeml3wvmcoqkvcjerfh.png",
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -187,7 +171,7 @@ export let allProjects = [
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": { discord },
+        "src": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747493715/lleobl9p2cqmovzeotcc.png",
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -204,7 +188,7 @@ export let allProjects = [
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": { parallax },
+        "src": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747493623/v21viitzwrbxzuetvjiz.png",
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
