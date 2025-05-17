@@ -8,7 +8,7 @@ import gagshi from "src/assets/Projects/TailwindCss/travel.png"
 import discord from "src/assets/Projects/TailwindCss/Discord.png"
 import parallax from "src/assets/Projects/HtmlCss/parallax.png"
 
-let project = [
+export let allProjects = [
   {
     "categoryName": "Featured",
     "projects": [

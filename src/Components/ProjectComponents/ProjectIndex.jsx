@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import allProjects from '../utilities/Projects.json'
+import { allProjects } from '../utilities/Projects'
 import ProjectCard from './ProjectCard'
 
 let ProjectCategoryName = [
