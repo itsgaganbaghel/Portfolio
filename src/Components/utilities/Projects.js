@@ -1,12 +1,12 @@
-import studyNotion from "src/assets/Projects/FullStack/studyNotion.png"
-import rhythm from "src/assets/Projects/FullStack/Rhythm.png"
-import portfolio from "src/assets/Projects/FullStack/portfolio.png"
-import cara from "src/assets/Projects/React/cara.png"
-import countryGuide from "src/assets/Projects/React/countryGuide.png"
-import razorpay from "src/assets/Projects/TailwindCss/razorpay.png"
-import gagshi from "src/assets/Projects/TailwindCss/travel.png"
-import discord from "src/assets/Projects/TailwindCss/Discord.png"
-import parallax from "src/assets/Projects/HtmlCss/parallax.png"
+import studyNotion from "../../assets/Projects/FullStack/studyNotion.png"
+import rhythm from "../../assets/Projects/FullStack/Rhythm.png"
+import portfolio from "../../assets/Projects/FullStack/portfolio.png"
+import cara from "../../assets/Projects/React/cara.png"
+import countryGuide from "../../assets/Projects/React/countryGuide.png"
+import razorpay from "../../assets/Projects/TailwindCss/razorpay.png"
+import gagshi from "../../assets/Projects/TailwindCss/travel.png"
+import discord from "../../assets/Projects/TailwindCss/Discord.png"
+import parallax from "../../assets/Projects/HtmlCss/parallax.png"
 
 export let allProjects = [
   {
