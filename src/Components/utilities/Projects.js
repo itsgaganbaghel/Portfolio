@@ -1,4 +1,14 @@
-[
+import studyNotion from "src/assets/Projects/FullStack/studyNotion.png"
+import rhythm from "src/assets/Projects/FullStack/Rhythm.png"
+import portfolio from "src/assets/Projects/FullStack/portfolio.png"
+import cara from "src/assets/Projects/React/cara.png"
+import countryGuide from "src/assets/Projects/React/countryGuide.png"
+import razorpay from "src/assets/Projects/TailwindCss/razorpay.png"
+import gagshi from "src/assets/Projects/TailwindCss/travel.png"
+import discord from "src/assets/Projects/TailwindCss/Discord.png"
+import parallax from "src/assets/Projects/HtmlCss/parallax.png"
+
+let project = [
   {
     "categoryName": "Featured",
     "projects": [
@@ -6,9 +16,9 @@
         "name": "Study Notion",
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
-        "position" : "sticky top-10",
+        "position": "sticky top-10",
         "isFeatured": true,
-        "src": "src/assets/Projects/FullStack/studyNotion.png",
+        "src": { studyNotion },
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -26,7 +36,7 @@
         "description": "A modern music streaming platform inspired by Spotify and JioSaavn, built with React.js, Tailwind CSS, and Firebase. This platform allows users to stream music, create playlists, browse trending songs, and enjoy a seamless music experience. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": "src/assets/Projects/FullStack/Rhythm.png",
+        "src": { rhythm },
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -38,7 +48,7 @@
         "description": "A sleek and responsive personal portfolio website built with React.js, Tailwind CSS, and Framer Motion, designed to showcase projects, skills, and experience. The platform features smooth page transitions, interactive project displays, and a contact form, offering a modern and engaging user experience. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": "src/assets/Projects/FullStack/portfolio.png",
+        "src": { portfolio },
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -59,7 +69,7 @@
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": "src/assets/Projects/FullStack/studyNotion.png",
+        "src": { studyNotion },
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -77,7 +87,7 @@
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": "src/assets/Projects/FullStack/Rhythm.png",
+        "src": { rhythm },
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -95,7 +105,7 @@
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": "src/assets/Projects/FullStack/portfolio.png",
+        "src": { portfolio },
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -118,7 +128,7 @@
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": "src/assets/Projects/React/cara.png",
+        "src": { cara },
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -130,7 +140,7 @@
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": "src/assets/Projects/React/countryGuide.png",
+        "src": { countryGuide },
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -153,7 +163,7 @@
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": "src/assets/Projects/TailwindCss/razorpay.png",
+        "src": { razorpay },
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -165,7 +175,7 @@
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": "src/assets/Projects/TailwindCss/travel.png",
+        "src": { gagshi },
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -177,7 +187,7 @@
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": "src/assets/Projects/TailwindCss/Discord.png",
+        "src": { discord },
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
@@ -194,7 +204,7 @@
         "description": "StudyNotion is a full-stack Ed-Tech platform built using the MERN stack. It features role-based authentication for Students and Mentors, offering tailored dashboards and functionalities for each user type. The platform enables course creation, enrollment, and interactive learning experiences, making it a complete solution for online education. ",
         "category": "FullStackProjects",
         "isFeatured": true,
-        "src": "src/assets/Projects/HtmlCss/parallax.png",
+        "src": { parallax },
         "Github": "code Link",
         "LiveUrl": "Project Live Url for demo",
         "Explore": "projectId",
