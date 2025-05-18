@@ -39,7 +39,7 @@ const ProjectOverView = () => {
                                 }
                             </ul>
 
-                            <a href={project?.LiveUrl} className='border border-zinc-600 px-8 py-2 mt-3 rounded-lg flex gap-3 items-center'>
+                            <a href={project?.LiveUrl} target='_blank' className='border border-zinc-600 px-8 py-2 mt-3 rounded-lg flex gap-3 items-center'>
                                 <IoEarth /> View Live site
                             </a>
                         </section>
