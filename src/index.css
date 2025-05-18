@@ -1,7 +1,4 @@
 @import "tailwindcss";
-.homePage {
-  scroll-behavior: smooth;
-}
 
 @theme {
   --color-primary: #000000;
@@ -31,14 +28,6 @@
   100% {
     transform: translateY(-20px);
   }
-}
-/* 
-.typingCursor {
-  animation: moveUp 0.5s alternate-reverse infinite;
-} */
-
-@theme inline {
-  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
 
 @keyframes spotlight {

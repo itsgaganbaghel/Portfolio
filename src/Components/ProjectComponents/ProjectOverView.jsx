@@ -3,21 +3,20 @@ import { FaRegDotCircle } from 'react-icons/fa'
 import { IoMdArrowRoundBack } from 'react-icons/io'
 import { IoEarth } from 'react-icons/io5'
 import { useLocation, useNavigate } from 'react-router-dom'
-import studyNotionWebsite from "../../assets/ProjectsFullPage/studyNotionWebsite.png"
 
 const ProjectOverView = () => {
     let { state } = useLocation()
     let navigate = useNavigate()
-    // console.log(state)
+    console.log(state)
     let { project, projectNumber } = state
-    // console.log(project)
-    // console.log(projectNumber)
+    console.log(project)
+    console.log(projectNumber)
     return (
         <>
             {
                 project &&
-                <section className='w-full  h-[90vh] pt-6 flex px-6 justify-between '>
-                    <article className='w-[35%] h-full  '>
+                <section className='w-full  mt-[10vh] md:mt-0 lg:h-[90vh] md:pt-6 flex flex-col lg:flex-row  gap-10 px-6 justify-between '>
+                    <article className='lg:w-[35%] h-full  '>
                         <section onClick={() => navigate(-1)}
                             className='border border-zinc-600  px-4 py-2 rounded-xl flex  items-center gap-3 w-fit cursor-pointer'
                         > <IoMdArrowRoundBack />Go Back</section>
@@ -33,7 +32,7 @@ const ProjectOverView = () => {
                                     project?.TechStack &&
                                     project?.TechStack.map((tech, index) => {
                                         return (
-                                            <li key={index} className='pl-16     flex items-center gap-4 mt-1'>
+                                            <li key={index} className='pl-16 flex items-center gap-4 mt-1'>
                                                 <FaRegDotCircle />  {tech}</li>
                                         )
                                     })
@@ -47,10 +46,10 @@ const ProjectOverView = () => {
 
                     </article>
 
-                    <figure className='min-h-full w-[60%] overflow-x-hidden overflow-y-scroll projectFullImage'
+                    <figure className='min-h-full lg:w-[60%] overflow-x-hidden lg:overflow-y-scroll projectFullImage'
 
                     >
-                        <img src={studyNotionWebsite} />
+                        <img src={project?.Explore} />
                     </figure>
                 </section>
             }

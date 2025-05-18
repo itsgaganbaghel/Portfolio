@@ -4,12 +4,13 @@ import SocialHandles from './SocialHandles'
 import { AnimatePresence, motion, useScroll } from 'motion/react'
 import { Menu, X } from "lucide-react"; // Lucide icons
 import MenuSection from './MenuSection'
+import { NavLink } from 'react-router-dom';
 
 const NavBarIndex = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const navLinks = ["Home", "About", "Services", "Contact"];
+    const navLinks = [["Home", '/'], ["About", "About"], ["Projects", "Projects"], ["Learn Web Dev", "/learn"]];
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -48,9 +49,9 @@ const NavBarIndex = () => {
                         <ul className="flex flex-col space-y-4 ">
                             {navLinks.map((link) => (
                                 <li key={link}>
-                                    <a href={''} className="text-white text-lg inline-block w-full hover:text-sky-300 hover:border-b text-center pb-2">
-                                        {link}
-                                    </a>
+                                    <NavLink  to={link[1]} onClick={toggleMenu}  className="text-white text-lg inline-block w-full hover:text-sky-300 hover:border-b text-center pb-2">
+                                        {link[0]}
+                                    </NavLink>
                                 </li>
                             ))}
                         </ul>

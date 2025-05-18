@@ -47,7 +47,7 @@ const Contact = () => {
           Whether you want to hire me or just say hello —
         </p>
         <button className=' bg-slate-800 flex justify-center items-center p-1 rounded-2xl outline-1 outline-slate-500'>
-          <a href='mailto:gagan717114baghel@gmail.com'
+          <a href='mailto:gaganbaghel393@gmail.com'
             className='text-primary  bg-white  rounded-xl py-3 px-4 font-bold font-serif'>
             Drop a message
           </a>

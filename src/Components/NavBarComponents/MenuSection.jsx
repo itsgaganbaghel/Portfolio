@@ -41,7 +41,7 @@ const MenuSection = () => {
                 <NavLink className={'navBarLinks px-5 py-1  rounded-xl'} to={'Projects'} >Project</NavLink>
             </motion.p>
             <motion.p variants={childVariant}>
-                <a href='mailto:gagan717114baghel@gmail.com'target='_blank' className={'navBarLinks px-5 py-1  rounded-xl'} to={'Contact'} >Contact </a>
+                <a href='mailto:gaganbaghel393@gmail.com'target='_blank' className={'navBarLinks px-5 py-1  rounded-xl'} to={'Contact'} >Contact </a>
             </motion.p>
             <motion.p variants={childVariant}>
                 <NavLink className={'navBarLinks px-5 py-1  rounded-xl'} to={'/learn'} >Learn Web Dev</NavLink>

@@ -37,6 +37,7 @@ const zoomIn = {
 }
 
 const ProjectsSection = () => {
+    console.log(allProjects[0].projects)
     return (
         <>
             <section className="relative w-full flex justify-center  lg:mt-52 mt-32 mb-20 lg:h-[45vh] overflow-hidden   ">
@@ -109,24 +110,26 @@ const ProjectsSection = () => {
 
                                         <section className='flex flex-col  items-center gap-5 md:flex-row'>
                                             <article className='lg:hidden flex gap-4 w-[90%] md:w-[60%] justify-between md:justify-start items-center'>
-                                                <a className='border border-zinc-600 px-6 py-2 rounded-lg flex items-center gap-2' href='#'>
+                                                <a href={project?.Github} target='_blank'
+                                                    className='border border-zinc-600 px-6 py-2 rounded-lg flex items-center gap-2' >
                                                     <FaCode /> Code</a>
-                                                <a className='border border-zinc-600 px-6 py-2 rounded-lg flex items-center gap-2' href='#'>
+                                                <a href={project?.LiveUrl} target='_blank'
+                                                    className='border border-zinc-600 px-6 py-2 rounded-lg flex items-center gap-2'>
                                                     <IoEarth /> Live demo</a>
 
                                             </article>
 
-                                            <NavLink className='flex items-center px-4 py-2  border border-zinc-700 gap-4 rounded-lg w-[90%] md:w-[40%] lg:w-fit' to={'/Projects/ProjectOverView'} state={{ project, index }} >
+                                            <NavLink className='flex items-center px-4 py-2  border border-zinc-700 gap-4 rounded-lg w-[90%] md:w-[40%] lg:w-fit' to={'/Projects/ProjectOverView'} state={{ project, projectNumber: index + 1 }} >
                                                 Explore The Project <FaArrowRightLong />
                                             </NavLink>
                                         </section>
 
                                         <section className='hidden lg:flex  border border-zinc-700 rounded-lg justify-evenly items-center py-10'>
-                                            <a className='flex flex-col items-center justify-center gap-2 text-gray-500 ' href='#'>
+                                            <a href={project?.Github} target='_blank' className='flex flex-col items-center justify-center gap-2 text-gray-500 ' >
                                                 <p className=' text-7xl'> <IoLogoGithub /></p>
                                                 <p className='lg:text-xl font-bold tracking-wider font-mono'>GitHub Code</p>
                                             </a>
-                                            <a className='flex flex-col items-center justify-center gap-2 text-gray-500' href='#'>
+                                            <a href={project?.LiveUrl} target='_blank' className='flex flex-col items-center justify-center gap-2 text-gray-500' >
                                                 <p className='text-7xl'> <BsArrowUpRightCircle /></p>
                                                 <p className='lg:text-xl font-bold tracking-wider font-mono'>Live Demo</p>
                                             </a>

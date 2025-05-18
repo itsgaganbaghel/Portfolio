@@ -109,11 +109,17 @@ const HeroSection = () => {
 
                 <motion.article variants={childVariant1} className='  mt-10 flex justify-center gap-4 lg:justify-start md:gap-10 text-white'>
 
-                    <article className='px-10 py-2 rounded-2xl bg-[#161D29]  flex items-center gap-2 cursor-pointer md:text-2xl'>
-                        <IoCheckmarkDoneCircleSharp /> Hire Me</article>
+                    <a href='mailto:gaganbaghel393@gmail.com' target='_blank'
+                        className='px-10 py-2 rounded-2xl bg-[#161D29]  flex items-center gap-2 cursor-pointer md:text-2xl'
+                    >
+                        <IoCheckmarkDoneCircleSharp /> Hire Me
+                    </a>
+                    <a href='https://drive.google.com/file/d/1Zf4B-nYPmru8zK6SX1F8CAsIB82HNvTt/view?usp=sharing' target='_blank'
+                        className='px-10 py-2 rounded-2xl bg-[#161D29]  flex items-center gap-2 cursor-pointer md:text-2xl'
+                    >
+                        <FaDownload />  Resume
+                    </a>
 
-                    <article className='px-10 py-2 rounded-2xl bg-[#161D29]  flex items-center gap-2 md:gap-4 cursor-pointer md:text-2xl'>
-                        <FaDownload />  Resume</article>
                 </motion.article>
             </motion.section>
 

@@ -4,7 +4,6 @@ import { IoEarth } from 'react-icons/io5'
 import { NavLink } from 'react-router-dom'
 
 const ProjectCard = ({ project, projectNumber, }) => {
-
     return (
         <section className='w-full lg:w-[37vw]  h-fit flex flex-col gap-5 py-6 border-2 border-secondary rounded-xl px-4'>
             <section className=''>
@@ -24,9 +23,11 @@ const ProjectCard = ({ project, projectNumber, }) => {
             </figure>
 
             <article className=' flex md:gap-10 justify-center flex-wrap gap-4'>
-                <a className='border border-zinc-600 px-4 py-1 rounded-lg flex items-center gap-2' href='#'>
+                <a href={project?.Github} target='_blank'
+                    className='border border-zinc-600 px-4 py-1 rounded-lg flex items-center gap-2' >
                     <FaCode /> Code</a>
-                <a className='border border-zinc-600 px-4 py-1 rounded-lg flex items-center gap-2' href='#'>
+                <a href={project?.LiveUrl} target='_blank'
+                    className='border border-zinc-600 px-4 py-1 rounded-lg flex items-center gap-2'>
                     <IoEarth /> Live demo</a>
                 <NavLink className='border flex items-center gap-2 border-zinc-600 px-4 py-1 rounded-lg' to={'/Projects/ProjectOverView'} state={{ project, projectNumber }} >
                     <FaInfoCircle /> Explore</NavLink>
