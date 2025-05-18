@@ -53,7 +53,7 @@ export let allProjects = [
     ]
   },
   {
-    "categoryName": "Full Stack",
+    "categoryName": "FullStack",
     "projects": [
       {
         "name": "Study Notion",
@@ -105,7 +105,7 @@ export let allProjects = [
     ]
   },
   {
-    "categoryName": "Front-End",
+    "categoryName": "FrontEnd",
     "projects": [
       {
         "name": "Cara Fashion hub",
@@ -140,7 +140,7 @@ export let allProjects = [
     ]
   },
   {
-    "categoryName": "Html Tailwind-CSS",
+    "categoryName": "TailwindCSS",
     "projects": [
       {
         "name": "Razorpay",

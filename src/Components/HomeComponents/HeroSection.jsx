@@ -61,13 +61,13 @@ const HeroSection = () => {
         }
     }
     return (
-        <section className='relative w-full h-[90vh] flex flex-col md:flex-row justify-center items-center '>
+        <section className='relative w-full h-[90vh] mt-[10vh] md:mt-0 flex flex-col lg:flex-row lg:justify-center items-center overflow-hidden '>
 
             <motion.section
                 variants={parentVariant}
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
-                className="md:w-[35%] md:h-[70%] h-[50vh] w-[100vw] relative rounded-xl overflow-hidden   "
+                className="lg:w-[35%] lg:h-[70%] h-[35vh] w-[100vw] relative rounded-xl overflow-hidden "
             >
 
                 <motion.img variants={childVariant}
@@ -78,7 +78,7 @@ const HeroSection = () => {
                 <motion.img variants={childVariant}
                     src={light}
                     alt='light'
-                    className='absolute z-20 w-1/2 scale-150 inset-0 translate-x-1/2 translate-y-1/2 text-white'
+                    className='absolute z-20 w-1/2 h-[50%] lg:h-fit scale-150 inset-0 translate-x-1/2 translate-y-1/2 text-white '
                 />
 
             </motion.section>
@@ -90,34 +90,34 @@ const HeroSection = () => {
                 transition={{
                     duration: 0.2
                 }}
-                className='relative md:h-[70%] md:w-[40%]  text-gray-400'>
+                className='relative md:w-[60%] lg:h-[70%] lg:w-[40%]  text-gray-400 md-px-0 px-4 '>
                 <motion.img variants={childVariant1}
                     src={arrow}
                     alt='arrow'
-                    className='hidden md:block absolute -left-56  w-[25%] rotate-y-12 z-50'
+                    className='hidden lg:block absolute -left-56  w-[25%] rotate-y-12 z-50'
                 />
-                <motion.section variants={childVariant1} className='text-3xl font-bold md:absolute -left-18 -top-5 w-full '>
+                <motion.section variants={childVariant1} className='lg:text-3xl text-center lg:text-start text-lg font-bold lg:absolute -left-18 -top-5 w-full '>
                     Hello! , I am <span className='text-white font-serif'>Gagan Baghel...</span>
                 </motion.section>
-                <motion.h2 variants={childVariant1} className='md:pt-30 pt-10  font-semibold text-2xl ' >
+                <motion.h2 variants={childVariant1} className='lg:mt-30   font-semibold text-2xl md:h-[5vh] mt-10 ' >
                     <span className='font-serif text-3xl'>I am a</span>
                     <span className=' pl-2  text-white font-mono'>
                         <ContainerTextFlip />
                     </span>
                 </motion.h2>
-                <motion.p variants={childVariant1} className='mt-6 font-medium text-xl font-mono'>I do End-to-end web development with MERN Stack — turning visions into fast, functional, and beautiful applications based on the user requirements.</motion.p>
+                <motion.p variants={childVariant1} className='mt-6 font-medium md:text-xl font-mono text-justify'>I do End-to-end web development with MERN Stack — turning visions into fast, functional, and beautiful applications based on the user requirements.</motion.p>
 
-                <motion.article variants={childVariant1} className='  mt-10 flex justify-start gap-10 text-white'>
+                <motion.article variants={childVariant1} className='  mt-10 flex justify-center gap-4 lg:justify-start md:gap-10 text-white'>
 
-                    <article className='px-10 py-2 rounded-2xl bg-[#161D29]  flex items-center gap-2 cursor-pointer '>
-                        <span className='text-xl'><IoCheckmarkDoneCircleSharp /> </span> Hire Me</article>
+                    <article className='px-10 py-2 rounded-2xl bg-[#161D29]  flex items-center gap-2 cursor-pointer md:text-2xl'>
+                        <IoCheckmarkDoneCircleSharp /> Hire Me</article>
 
-                    <article className='px-10 py-2 rounded-2xl bg-[#161D29]  flex items-center gap-2 cursor-pointer'>
+                    <article className='px-10 py-2 rounded-2xl bg-[#161D29]  flex items-center gap-2 md:gap-4 cursor-pointer md:text-2xl'>
                         <FaDownload />  Resume</article>
                 </motion.article>
             </motion.section>
 
-            <p className='absolute bottom-3 right-0 text-6xl  text-gray-300 scrollUp'><RiArrowUpDoubleFill /></p>
+            <p className='hidden lg:block absolute bottom-3 right-0 text-6xl  text-gray-300 scrollUp'><RiArrowUpDoubleFill /></p>
         </section>
 
     )

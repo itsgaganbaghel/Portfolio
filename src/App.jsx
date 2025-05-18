@@ -7,6 +7,8 @@ import { BiWorld } from 'react-icons/bi'
 import { IoMdContact } from 'react-icons/io'
 import { FaInfoCircle } from 'react-icons/fa'
 import ScrollToTop from './Components/utilities/ScrollToTop'
+import Navbar from './Components/NavBarComponents/Navbar'
+import { AnimatePresence } from 'motion/react'
 
 const App = () => {
   return (
@@ -17,21 +19,6 @@ const App = () => {
         <Outlet />
       </section>
 
-      {/*  Mobile Navbar  */}
-      <section className='flex  justify-between  top-[90vh] fixed w-full md:hidden bg-[#1A0B2E] py-3 px-4 '>
-        <NavLink className={'PhoneNavBarLinks text-4xl  rounded-full px-2 py-2'} to={'/'} >
-          <IoHome />
-        </NavLink>
-        <NavLink className={'PhoneNavBarLinks text-4xl rounded-full px-2 py-2  '} to={'About'} >
-          <FaInfoCircle />
-        </NavLink>
-        <NavLink className={'PhoneNavBarLinks text-4xl    rounded-full px-2 py-2'} to={'Projects'} >
-          <BiWorld />
-        </NavLink>
-        <NavLink className={'PhoneNavBarLinks text-4xl    rounded-full px-2 py-2'} to={'Contact'} >
-          <IoMdContact />
-        </NavLink>
-      </section>
     </section>
   )
 }

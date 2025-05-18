@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
-import Logo from './Logo'
-import SocialHandles from './SocialHandles'
-import { AnimatePresence, motion, useScroll } from 'motion/react'
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react"; // Lucide icons
-import MenuSection from './MenuSection'
+import Logo from "./Logo";
+import MenuSection from "./MenuSection";
+import SocialHandles from "./SocialHandles";
 
-const NavBarIndex = () => {
-
+const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const navLinks = ["Home", "About", "Services", "Contact"];
@@ -14,12 +13,13 @@ const NavBarIndex = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
-    const { scrollYProgress } = useScroll()
+
     return (
-        <nav className="bg-primary shadow-md fixed  md:sticky top-0 w-full z-50 ">
-            <section className='w-full flex justify-between h-[10vh] items-center md:px-10 px-3 sticky top-0 bg-primary z-100'>
+        <nav className="bg-primary shadow-md fixed w-full z-50">
+            <section className='w-full flex justify-between h-[10vh] items-center px-10 sticky top-0 bg-primary z-100'>
                 <Logo />
                 <MenuSection />
+                <SocialHandles />
                 <motion.section className='w-full h-[1px] bg-slate-700 fixed top-[10vh] left-0 origin-left'
                     style={{
                         scaleX: scrollYProgress
@@ -27,14 +27,11 @@ const NavBarIndex = () => {
                 >
                 </motion.section>
 
-                <section className='flex gap-4 items-center'>
-                    <SocialHandles />
-                    <button onClick={toggleMenu} className="md:hidden block text-white ">
-                        {isOpen ? <X size={35} /> : <Menu size={35} />}
-                    </button>
-                </section>
+                <button onClick={toggleMenu} className="md:hidden block text-gray-800">
+                    {isOpen ? <X size={28} /> : <Menu size={28} />}
+                </button>
             </section>
-
+           
             {/* Mobile Menu */}
             <AnimatePresence>
                 {isOpen && (
@@ -58,7 +55,7 @@ const NavBarIndex = () => {
                 )}
             </AnimatePresence>
         </nav>
-    )
-}
+    );
+};
 
-export default NavBarIndex
+export default Navbar;

@@ -86,23 +86,23 @@ const SkillsSection = () => {
         Skills
       </motion.h2>
 
-      <article className="w-full h-[70vh] overflow-hidden grid grid-cols-[1fr_1fr_0.5fr_0.5fr] grid-rows-2 gap-6">
+      <article className="w-full lg:h-[70vh] overflow-hidden grid  lg:grid-cols-[1fr_1fr_0.5fr_0.5fr] lg:grid-rows-2  grid-rows-4 gap-6">
 
         {/* Frontend */}
         <motion.section
-          className="border border-slate-700 row-span-2 rounded-2xl flex flex-col flex-wrap items-center justify-center gap-10"
+          className="border border-slate-700 lg:row-span-2 rounded-2xl flex flex-col items-center justify-center gap-10 lg:gap-16 p-4"
           variants={fadeIn}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
         >
           <h2 className='w-full text-center text-5xl'>Frontend</h2>
-          <div className='flex flex-wrap items-center justify-center gap-x-10 gap-y-12'>
+          <div className='flex flex-wrap items-center justify-center md:gap-x-16 md:gap-y-12 lg:gap-x-6 lg:gap-y-[max(2vh,2vw)]  gap-y-4 gap-x-6 '>
             {
               frontendLogos.map((data, index) => (
                 <motion.p
                   key={index}
-                  className="hover:scale-110 cursor-pointer border border-slate-800 text-5xl px-5 py-4 rounded-2xl transition-transform duration-200"
+                  className="hover:scale-110 cursor-pointer border border-slate-800 lg:text-[max(3vh,3vw)] text-5xl px-5 py-4 rounded-2xl transition-transform duration-200"
                   style={{ backgroundColor: 'transparent' }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -120,14 +120,14 @@ const SkillsSection = () => {
 
         {/* Animation Libraries */}
         <motion.section
-          className="border border-slate-700 rounded-2xl flex flex-col flex-wrap items-center justify-center gap-10"
+          className="border border-slate-700 rounded-2xl flex flex-col flex-wrap items-center justify-center gap-10 lg:gap-4"
           variants={zoomIn}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.4 }}
         >
-          <h2 className='w-full text-center text-5xl'>Animation Libraries</h2>
-          <div className='flex flex-wrap items-center justify-center gap-x-8'>
+          <h2 className='w-full text-center text-5xl lg:text-[4vh]'>Animation Libraries</h2>
+          <div className='flex flex-wrap items-center justify-center lg:gap-x-8 gap-8'>
             {
               animationLibraries.map((data, index) => (
                 <motion.p
@@ -146,19 +146,19 @@ const SkillsSection = () => {
 
         {/* Other */}
         <motion.section
-          className="border border-slate-700 col-span-2 rounded-2xl flex flex-col flex-wrap items-center justify-center gap-10"
+          className="border border-slate-700 lg:col-span-2 rounded-2xl flex flex-col flex-wrap items-center justify-center gap-10"
           variants={fadeIn}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.8 }}
         >
           <h2 className='w-full text-center text-5xl'>Other</h2>
-          <div className='flex flex-wrap items-center justify-center gap-x-8'>
+          <div className='flex flex-wrap items-center justify-center lg:gap-x-8 gap-12'>
             {
               otherSkillsLogos.map((data, index) => (
                 <motion.p
                   key={index}
-                  className="hover:scale-110 cursor-pointer border border-slate-800 text-5xl px-5 py-4 rounded-2xl transition-transform duration-200"
+                  className="hover:scale-110 cursor-pointer border border-slate-800 text-5xl lg:text-[3vw] px-5 py-4 rounded-2xl transition-transform duration-200"
                   style={{ backgroundColor: 'transparent' }}
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -176,7 +176,7 @@ const SkillsSection = () => {
 
         {/* Backend */}
         <motion.section
-          className="border border-slate-700 col-span-2 rounded-2xl flex flex-wrap items-center justify-center gap-x-8"
+          className="border border-slate-700 lg:col-span-2 rounded-2xl flex flex-wrap items-center justify-center gap-x-8"
           variants={fadeIn}
           initial="hidden"
           whileInView="show"
@@ -187,7 +187,7 @@ const SkillsSection = () => {
             backendLogos.map((data, index) => (
               <motion.p
                 key={index}
-                className="hover:scale-110 cursor-pointer border border-slate-800 text-5xl px-5 py-4 rounded-2xl transition-transform duration-200"
+                className="hover:scale-110 cursor-pointer border border-slate-800 text-5xl lg:text-[5vh] px-5 py-4 rounded-2xl transition-transform duration-200"
                 style={{ backgroundColor: 'transparent' }}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -204,7 +204,7 @@ const SkillsSection = () => {
 
         {/* Boy Image */}
         <motion.section
-          className="border border-slate-700 rounded-2xl"
+          className="border hidden lg:flex justify-center items-center border-slate-700 rounded-2xl"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}

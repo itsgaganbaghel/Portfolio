@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { motion } from 'motion/react'
 import { delay } from 'motion'
 
-const Menu = () => {
+const MenuSection = () => {
     let [isOpen, setIsOpen] = useState(false)
     let toggleAnimation = () => {
         setIsOpen(!isOpen)
@@ -30,7 +30,7 @@ const Menu = () => {
             transition={{
                 duration: 0.3   
             }}
-            className=' gap-8 md:flex hidden'>
+            className='lg:gap-8 md:flex hidden'>
             <motion.p variants={childVariant}>
                 <NavLink className={'navBarLinks px-5 py-1  rounded-xl'} to={'/'} >Home</NavLink>
             </motion.p>
@@ -50,4 +50,4 @@ const Menu = () => {
     )
 }
 
-export default Menu
+export default MenuSection
