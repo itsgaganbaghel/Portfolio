@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaRegDotCircle } from 'react-icons/fa'
 import { IoMdArrowRoundBack } from 'react-icons/io'
 import { IoEarth } from 'react-icons/io5'
@@ -7,10 +7,8 @@ import { useLocation, useNavigate } from 'react-router-dom'
 const ProjectOverView = () => {
     let { state } = useLocation()
     let navigate = useNavigate()
-    console.log(state)
-    let { project, projectNumber } = state
-    console.log(project)
-    console.log(projectNumber)
+    let { project, projectNumber } = state;
+    const [imageLoaded, setImageLoaded] = useState(false)
     return (
         <>
             {
@@ -46,10 +44,19 @@ const ProjectOverView = () => {
 
                     </article>
 
-                    <figure className='min-h-full lg:w-[60%] overflow-x-hidden lg:overflow-y-scroll projectFullImage'
+                    <figure className='min-h-full lg:w-[60%] overflow-x-hidden lg:overflow-y-scroll projectFullImage relative rounded-lg'
 
                     >
-                        <img src={project?.Explore} />
+                        {/* Shimmer Placeholder */}
+                        {!imageLoaded && (
+                            <div className='absolute inset-0 shimmer-bg '></div>
+                        )}
+                        <img src={project?.Explore}
+                            alt='Project Explore'
+                            loading='lazy'
+                            onLoad={() => setImageLoaded(true)} 
+                            className={` rounded-2xl transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                            />
                     </figure>
                 </section>
             }

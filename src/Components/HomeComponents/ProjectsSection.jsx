@@ -134,9 +134,6 @@ const ProjectsSection = () => {
                                                 <p className='lg:text-xl font-bold tracking-wider font-mono'>Live Demo</p>
                                             </a>
                                         </section>
-
-
-
                                     </article>
                                 </section>
 
