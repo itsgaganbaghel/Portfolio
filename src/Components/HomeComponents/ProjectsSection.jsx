@@ -47,7 +47,7 @@ const ProjectsSection = () => {
                     whileInView="show"
                     viewport={{ once: true, amount: 0.1 }}
                     className="hidden lg:block absolute -left-16 bottom-0 h-[300px]  w-1/2 bg-primary overflow-hidden">
-                    <section className="sloped-panel w-[100%] h-full absolute top-0 left-0 bg-gradient-to-b from-[#141517] to-primary" ></section>
+                    <section className="sloped-panel w-[100%] h-full absolute top-0 left-0 bg-gradient-to-b from-[#27292d] to-primary" ></section>
                 </motion.section>
 
                 <motion.section
@@ -56,7 +56,7 @@ const ProjectsSection = () => {
                     whileInView="show"
                     viewport={{ once: true, amount: 0.2 }}
                     className="hidden lg:block absolute -right-16 bottom-0 h-[300px] w-1/2 bg-primary overflow-hidden">
-                    <section className="sloped-panel-reverse w-[100%] h-full absolute top-0 right-0 bg-gradient-to-b from-[#141517] to-primary" />
+                    <section className="sloped-panel-reverse w-[100%] h-full absolute top-0 right-0 bg-gradient-to-b from-[#27292d] to-primary" />
                 </motion.section>
 
                 <motion.section

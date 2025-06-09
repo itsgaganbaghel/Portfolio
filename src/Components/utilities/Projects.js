@@ -28,7 +28,7 @@ export let allProjects = [
         "category": "FullStackProjects",
         "isFeatured": true,
         "src": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747493529/hnnaxfsf2ebtry5ilxpi.png",
-        "Github": "https://github.com/itsgaganbaghel/RhythmMusicWebsite",
+        "Github": "https://github.com/itsgaganbaghel/musicRhythms",
         "LiveUrl": "https://musicrhythms.web.app/",
         "Explore": "https://res.cloudinary.com/dgdkrgtlv/image/upload/v1747606605/iqcsvynvavujfkmknobf.png",
         "TechStack": ["React Js", "Redux", "Tailwind Css", "Firebase"],
