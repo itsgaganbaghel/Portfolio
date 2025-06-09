@@ -94,7 +94,7 @@ const HeroSection = () => {
                 <motion.img variants={childVariant1}
                     src={arrow}
                     alt='arrow'
-                    className='hidden lg:block absolute -left-56  w-[25%] rotate-y-12 z-50'
+                    className='hidden lg:block absolute -left-56  w-[25%] rotate-y-12 z-40'
                 />
                 <motion.section variants={childVariant1} className='lg:text-3xl text-center lg:text-start text-lg font-bold lg:absolute -left-18 -top-5 w-full '>
                     Hello! , I am <span className='text-white font-serif'>Gagan Baghel...</span>
