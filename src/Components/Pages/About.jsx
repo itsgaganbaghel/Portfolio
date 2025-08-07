@@ -135,7 +135,7 @@ const About = () => {
   ];
 
   return (
-    <div className="relative w-full overflow-clip flex">
+    <div className="relative w-full overflow-clip flex cursor-none">
       <Timeline data={data} />
 
     </div>

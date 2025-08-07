@@ -1,45 +1,69 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import App from '../App'
-import Home from './Pages/Home'
-import About from './Pages/About'
-import ProjectIndex from './ProjectComponents/ProjectIndex'
-import ProjectOverView from './ProjectComponents/ProjectOverView'
-import LearnWebDev from './Pages/LearnWebDev'
+// Routers.jsx
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { lazy, Suspense } from "react";
+
+// Parent layout
+import App from "../App";
+import Loading from "./Pages/Loading";
+import Blogs from "./Pages/Blogs";
+
+// Lazy-loaded pages
+const Home = lazy(() => import("./Pages/Home"));
+const About = lazy(() => import("./Pages/About"));
+const ProjectIndex = lazy(() => import("./ProjectComponents/ProjectIndex"));
+const ProjectOverView = lazy(() =>
+  import("./ProjectComponents/ProjectOverView")
+);
+
+// Fallback UI
 
 const Routers = () => {
-
-  let allRoutes = createBrowserRouter([
+  const allRoutes = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: <App />,
       children: [
         {
           index: true,
-          element: <Home />
+          element: <Home />,
         },
         {
-          path: 'About',
-          element: <About />
+          path: "About",
+          element: (
+            <Suspense fallback={<Loading />}>
+              <About />
+            </Suspense>
+          ),
         },
         {
-          path: 'Projects',
-          element: <ProjectIndex />,
+          path: "Projects",
+          element: (
+            <Suspense fallback={<Loading />}>
+              <ProjectIndex />
+            </Suspense>
+          ),
+        },
+        {
+          path: "/Projects/ProjectOverView",
+          element: (
+            <Suspense fallback={<Loading />}>
+              <ProjectOverView />
+            </Suspense>
+          ),
+        },
+        {
+          path: "Blogs",
+          element: (
+            <Suspense fallback={<Loading />}>
+              <Blogs />
+            </Suspense>
+          ),
+        },
+      ],
+    },
+  ]);
 
-        },
-        {
-          path: '/Projects/ProjectOverView',
-          element: <ProjectOverView />
-        },
-        {
-          path: 'learn',
-          element: <LearnWebDev />
-        }
-      ]
-    }
-  ])
-  return (
-    <RouterProvider router={allRoutes} />
-  )
-}
+  return <RouterProvider router={allRoutes} />;
+};
 
-export default Routers
+export default Routers;

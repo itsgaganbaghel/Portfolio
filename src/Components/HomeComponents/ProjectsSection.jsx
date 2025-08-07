@@ -65,7 +65,7 @@ const ProjectsSection = () => {
                     whileInView="show"
                     viewport={{ once: true, amount: 0.2 }}
                     className=" z-30">
-                    <button className=" border border-gray-800 bg-primary rounded-xl lg:text-6xl text-4xl font-serif px-8  py-3 mb-4">Featured Projects</button>
+                    <p className=" border border-gray-800 bg-primary rounded-xl lg:text-6xl text-4xl font-serif px-8  py-3 mb-4">Featured Projects</p>
                     <h3 className=" mb-2 text-center">
                         Study Notion
                         <span className='px-3'>—</span>
@@ -82,14 +82,14 @@ const ProjectsSection = () => {
                 {
                     allProjects[0].projects.map((project, index) => {
                         return (
-                            <section className={`sticky lg:top-24  top-32 w-full md:w-[80%] lg:w-full  md:mx-auto lg:h-[80vh] h-[70vh] bg-primary grid grid-cols-1 grid-rows-[14%_46%_40%] md:grid-rows-[14%_56%_30%] lg:grid-rows-[25%_75%] lg:grid-cols-[40%_60%]  pt-3 border-2 border-secondary rounded-xl `}>
+                            <section className={`sticky lg:top-24  top-32 w-full md:w-[80%] lg:w-full  md:mx-auto lg:h-[80vh] h-[70vh] bg-primary grid grid-cols-1 grid-rows-[14%_46%_40%] md:grid-rows-[14%_56%_30%] lg:grid-rows-[25%_75%] lg:grid-cols-[40%_60%]   border-2 border-secondary rounded-xl `}>
 
                                 <section className='  relative flex items-center  lg:text-6xl text-4xl font-serif lg:pl-10 pl-4  gap-6 '>
                                     <p> 0{index + 1}. {project?.name}</p>
                                 </section>
 
                                 <figure className=' overflow-hidden lg:row-span-2  flex justify-center items-center'>
-                                    <img src={project?.src} alt='Project Image' className='w-full h-full  lg:rounded-4xl  rounded-xl lg:h-[80%] px-2 ' />
+                                    <img src={project?.src} alt='Project Image' className='w-full h-full  lg:rounded-4xl  rounded-xl lg:h-[90%] pl-2 pr-4 ' />
                                 </figure>
 
                                 <section className='flex flex-col justify-start  md:justify-center pt-4 gap-6  px-5 '>
@@ -143,9 +143,9 @@ const ProjectsSection = () => {
                 }
             </section>
 
-            <NavLink to={"Projects"} className='flex justify-center transition-all duration-600  items-center gap-2 text-3xl mb-20 mt-10   py-4 rounded-2xl' >
+            <NavLink to={"Projects"} className='flex justify-center transition-all duration-600  items-center gap-2 text-3xl mb-20 mt-10  w-fit mx-auto  py-4 rounded-2xl group' >
                 <p>Explore All Projects</p>
-                <p><TbCircleArrowUpRight /></p>
+                <p className='group-hover:-translate-y-1 transition-all duration-400 group-hover:text-blue-300'><TbCircleArrowUpRight /></p>
             </NavLink>
         </>
     )

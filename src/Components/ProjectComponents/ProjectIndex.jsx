@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { allProjects } from '../utilities/Projects'
 import ProjectCard from './ProjectCard'
+import { NavLink } from 'react-router-dom'
 
 let ProjectCategoryName = [
   "Featured",
@@ -32,16 +33,16 @@ const ProjectIndex = () => {
 
 
   return (
-    <section className='pt-[5vh] min-h-[90vh] mt-[10vh] md:mt-0'>
+    <section className='pt-[5vh] min-h-[90vh] mt-[10vh] md:mt-0 cursor-none'>
 
       <section className=' w-[95vw] lg:w-[80vw] bg-[#141517] flex flex-wrap justify-between items-center mx-auto md:h-[7vh]  px-2 gap-4 py-3 rounded-2xl md:gap-0 md:py-0 md:rounded-full border-b border-b-[#4a556593]'>
         {
           ProjectCategoryName.map((categoryName, index) => {
             return (
-              <p key={index} onClick={() => setProjectCategory(categoryName)}
+              <NavLink key={index} onClick={() => setProjectCategory(categoryName)}
                 className={`cursor-pointer  px-4 py-2 rounded-full    ${categoryName == currentTab ? 'bg-[#000814]' : ''}`}>
                 {categoryName}
-              </p>
+              </NavLink>
             )
           })
         }

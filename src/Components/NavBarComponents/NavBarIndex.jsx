@@ -10,18 +10,18 @@ const NavBarIndex = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const navLinks = [["Home", '/'], ["About", "About"], ["Projects", "Projects"], ["Learn Web Dev", "/learn"]];
+    const navLinks = [["Home", '/'], ["About", "About"], ["Projects", "Projects"], ["Blogs", "/Blogs"]];
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
     const { scrollYProgress } = useScroll()
     return (
-        <nav className="bg-primary shadow-md fixed  md:sticky top-0 w-full z-50 ">
+        <nav className="bg-primary shadow-md fixed  md:sticky top-0 w-full z-50 cursor-none ">
             <section className='w-full flex justify-between h-[10vh] items-center md:px-10 px-3 sticky top-0 bg-primary z-100'>
                 <Logo />
                 <MenuSection />
-                <motion.section className='w-full h-[1px] bg-slate-700 fixed top-[10vh] left-0 origin-left'
+                <motion.section className='w-full h-[2px] bg-slate-700 fixed top-[10vh] left-0 origin-left'
                     style={{
                         scaleX: scrollYProgress
                     }}
@@ -49,10 +49,11 @@ const NavBarIndex = () => {
                         <ul className="flex flex-col space-y-4 ">
                             {navLinks.map((link) => (
                                 <li key={link}>
-                                    <NavLink  to={link[1]} onClick={toggleMenu}  className="text-white text-lg inline-block w-full hover:text-sky-300 hover:border-b text-center pb-2">
+                                    <NavLink to={link[1]} onClick={toggleMenu} className="text-white text-lg inline-block w-full hover:text-sky-300 hover:border-b text-center pb-2">
                                         {link[0]}
                                     </NavLink>
                                 </li>
+
                             ))}
                         </ul>
                     </motion.div>

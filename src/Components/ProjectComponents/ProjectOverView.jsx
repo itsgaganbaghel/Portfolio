@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FaRegDotCircle } from 'react-icons/fa'
 import { IoMdArrowRoundBack } from 'react-icons/io'
 import { IoEarth } from 'react-icons/io5'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 
 const ProjectOverView = () => {
     let { state } = useLocation()
@@ -13,11 +13,11 @@ const ProjectOverView = () => {
         <>
             {
                 project &&
-                <section className='w-full  mt-[10vh] md:mt-0 lg:h-[90vh] md:pt-6 flex flex-col lg:flex-row  gap-10 px-6 justify-between '>
+                <section className='w-full  mt-[10vh] md:mt-0 lg:h-[90vh] md:pt-6 flex flex-col lg:flex-row  gap-10 px-6 justify-between cursor-none'>
                     <article className='lg:w-[35%] h-full  '>
-                        <section onClick={() => navigate(-1)}
+                        <NavLink onClick={() => navigate(-1)}
                             className='border border-zinc-600  px-4 py-2 rounded-xl flex  items-center gap-3 w-fit cursor-pointer'
-                        > <IoMdArrowRoundBack />Go Back</section>
+                        > <IoMdArrowRoundBack />Go Back</NavLink>
 
                         <section className='pl-8 pt-6 flex flex-col items-start gap-5  '>
                             <h2 className='text-2xl font-bold tracking-wider'>

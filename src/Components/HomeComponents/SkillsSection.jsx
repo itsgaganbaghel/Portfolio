@@ -76,7 +76,7 @@ const SkillsSection = () => {
 
   return (
     <section className='md:px-12 px-4'>
-      <motion.h2
+      <motion.span
         className='text-9xl font-serif mb-4'
         variants={fadeIn}
         initial="hidden"
@@ -84,7 +84,7 @@ const SkillsSection = () => {
         viewport={{ once: true, amount: 0.2 }}
       >
         Skills
-      </motion.h2>
+      </motion.span>
 
       <article className="w-full lg:h-[70vh] overflow-hidden grid  lg:grid-cols-[1fr_1fr_0.5fr_0.5fr] lg:grid-rows-2  grid-rows-4 gap-6">
 
@@ -102,7 +102,7 @@ const SkillsSection = () => {
               frontendLogos.map((data, index) => (
                 <motion.p
                   key={index}
-                  className="hover:scale-110 cursor-pointer border border-slate-800 lg:text-[max(3vh,3vw)] text-5xl px-5 py-4 rounded-2xl transition-transform duration-200"
+                  className="hover:scale-110 cursor-none border border-slate-800 lg:text-[max(3vh,3vw)] text-5xl px-5 py-4 rounded-2xl transition-transform duration-200"
                   style={{ backgroundColor: 'transparent' }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -132,7 +132,7 @@ const SkillsSection = () => {
               animationLibraries.map((data, index) => (
                 <motion.p
                   key={index}
-                  className='hover:scale-110 cursor-pointer border border-slate-800 text-3xl px-4 py-3 rounded-2xl'
+                  className='hover:scale-110 cursor-none border border-slate-800 text-3xl px-4 py-3 rounded-2xl'
                   style={{ backgroundColor: 'transparent' }}
                   onMouseEnter={(e) => e.currentTarget.style.backgroundColor = data.color}
                   onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
@@ -158,7 +158,7 @@ const SkillsSection = () => {
               otherSkillsLogos.map((data, index) => (
                 <motion.p
                   key={index}
-                  className="hover:scale-110 cursor-pointer border border-slate-800 text-5xl lg:text-[3vw] px-5 py-4 rounded-2xl transition-transform duration-200"
+                  className="hover:scale-110 cursor-none border border-slate-800 text-5xl lg:text-[3vw] px-5 py-4 rounded-2xl transition-transform duration-200"
                   style={{ backgroundColor: 'transparent' }}
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -187,7 +187,7 @@ const SkillsSection = () => {
             backendLogos.map((data, index) => (
               <motion.p
                 key={index}
-                className="hover:scale-110 cursor-pointer border border-slate-800 text-5xl lg:text-[5vh] px-5 py-4 rounded-2xl transition-transform duration-200"
+                className="hover:scale-110 cursor-none border border-slate-800 text-5xl lg:text-[5vh] px-5 py-4 rounded-2xl transition-transform duration-200"
                 style={{ backgroundColor: 'transparent' }}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
