@@ -13,10 +13,10 @@ let ProjectCategoryName = [
 ]
 
 const ProjectIndex = () => {
-  console.log(allProjects)
+  // console.log(allProjects)
   let [currentTab, setCurrentTab] = useState(ProjectCategoryName[0])
   let [projects, setProjects] = useState(allProjects[0].projects)
-  console.log(projects)
+  // console.log(projects)
 
   let setProjectCategory = (value) => {
     console.log(value)
@@ -56,7 +56,7 @@ const ProjectIndex = () => {
         {
           projects.map((project, index) => {
             return (
-              <ProjectCard project={project} projectNumber={index + 1} />
+              <ProjectCard  key={index} project={project} projectNumber={index + 1} />
             )
           })
         }

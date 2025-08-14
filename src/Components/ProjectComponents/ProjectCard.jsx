@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const ProjectCard = ({ project, projectNumber }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [imgSrc, setImgSrc] = useState("");
+  const [imgSrc, setImgSrc] = useState(null);
 
   useEffect(() => {
     setImgSrc(project?.src);

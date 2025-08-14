@@ -70,7 +70,7 @@ const About = () => {
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-lg dark:text-neutral-200">
-            I Join my 6 months long Internship and Training Program in <a href='https://www.qspiders.com' className='bg-secondary px-2 py-1/2 border-b rounded-2xl inline-block mx-1' >Qspider</a> Noida.
+            I Join my 6 months long Internship and Training Program in <a href='https://www.qspiders.com' target='_blank' className='bg-secondary px-2 py-1/2 border-b rounded-2xl inline-block mx-1' >Qspider</a> Noida  - Feb to Aug 2024 
           </p>
           <ul className='text-sm flex flex-col gap-3 mb-4'>
             <li>

@@ -6,6 +6,7 @@ import { lazy, Suspense } from "react";
 import App from "../App";
 import Loading from "./Pages/Loading";
 import Blogs from "./Pages/Blogs";
+import NotFound from "./Pages/NotFound";
 
 // Lazy-loaded pages
 const Home = lazy(() => import("./Pages/Home"));
@@ -58,6 +59,10 @@ const Routers = () => {
               <Blogs />
             </Suspense>
           ),
+        },
+        {
+          path: "*",
+          element: <NotFound />,
         },
       ],
     },
