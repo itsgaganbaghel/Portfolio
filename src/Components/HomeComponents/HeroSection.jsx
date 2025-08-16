@@ -11,9 +11,9 @@ import { Button } from "../utilities/Moving-border";
 import { NavLink } from "react-router-dom";
 
 const HeroSection = () => {
-  let [isOpen, setIsOpen] = useState(false);
+  let [isOpen, setIsOpen] = useState(true);
   let toggleHeroSection = () => {
-    setIsOpen(!isOpen);
+    // setIsOpen(!isOpen);
   };
 
   useEffect(() => {
@@ -79,7 +79,7 @@ const HeroSection = () => {
           variants={childVariant}
           src={light}
           alt="light"
-          className="absolute z-20 w-1/2 h-[50%] lg:h-fit scale-150 inset-0 translate-x-1/2 translate-y-1/2 text-white "
+          className="absolute z-20 w-1/2 h-[50%]  scale-150 inset-0 translate-x-1/2 translate-y-1/2 text-white "
         />
       </motion.section>
 
@@ -96,11 +96,11 @@ const HeroSection = () => {
           variants={childVariant1}
           src={arrow}
           alt="arrow"
-          className="hidden lg:block absolute -left-56  w-[25%] rotate-y-12 z-40"
+          className="hidden lg:block absolute -left-44 top-8  xl:-left-56 xl:top-0 lg:w-[32%] xl:w-[25%] rotate-y-12 z-40"
         />
         <motion.section
           variants={childVariant1}
-          className="lg:text-3xl text-center lg:text-start text-lg font-bold lg:absolute -left-18 -top-5 w-full "
+          className="lg:text-3xl text-center lg:text-start text-lg font-bold lg:absolute -left-4 top-3 xl:-left-16 xl:-top-4 w-full lg:min-w-[50vw] "
         >
           <p>
             Hello! , I am{" "}
@@ -132,7 +132,7 @@ const HeroSection = () => {
         >
           <Button
             borderRadius="1.5rem"
-            className="bg-white dark:bg-[#161D29]    text-black dark:text-white border-neutral-200 dark:border-slate-800 overflow-hidden"
+            className=" bg-[#161D29]  text-white border-slate-800 overflow-hidden"
           >
             <a
               href="mailto:gaganbaghel393@gmail.com"
