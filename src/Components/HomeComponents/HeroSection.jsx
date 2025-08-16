@@ -13,7 +13,7 @@ import { NavLink } from "react-router-dom";
 const HeroSection = () => {
   let [isOpen, setIsOpen] = useState(true);
   let toggleHeroSection = () => {
-    // setIsOpen(!isOpen);
+    setIsOpen(!isOpen);
   };
 
   useEffect(() => {
