@@ -145,7 +145,7 @@ const HeroSection = () => {
 
           <Button
             borderRadius="1.5rem"
-            className="bg-white dark:bg-[#161D29]    text-black dark:text-white border-neutral-200 dark:border-slate-800 overflow-hidden "
+            className="bg-[#161D29] text-white border-slate-800 overflow-hidden "
           >
             <a
               href="/resume.pdf"
