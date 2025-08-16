@@ -11,7 +11,7 @@ import { Button } from "../utilities/Moving-border";
 import { NavLink } from "react-router-dom";
 
 const HeroSection = () => {
-  let [isOpen, setIsOpen] = useState(true);
+  let [isOpen, setIsOpen] = useState(false);
   let toggleHeroSection = () => {
     setIsOpen(!isOpen);
   };
