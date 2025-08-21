@@ -10,6 +10,7 @@ import qsp from "../../assets/about/Company2024/qsp.png";
 import studyNotion from "../../assets/Projects/FullStack/studyNotion.png";
 import cara from "../../assets/Projects/React/cara.png";
 import countryGuide from "../../assets/Projects/React/countryGuide.png";
+import GoToTop from "../utilities/GoToTop";
 
 const About = () => {
   let firstJob = [
@@ -200,6 +201,7 @@ const About = () => {
 
   return (
     <div className="relative w-full overflow-clip flex cursor-none">
+      <GoToTop />
       <Timeline data={data} />
     </div>
   );

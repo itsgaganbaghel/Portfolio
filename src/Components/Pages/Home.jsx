@@ -1,12 +1,8 @@
-import { RiArrowUpDoubleFill } from "react-icons/ri";
-// import Contact from "./Contact";
 import HeroSection from "../HomeComponents/HeroSection";
-// import SkillsSection from "../HomeComponents/SkillsSection";
-// import ProjectsSection from "../HomeComponents/ProjectsSection";
 import { motion } from "motion/react";
 import { lazy, Suspense } from "react";
 import Fallback from "./Fallback";
-import { NavLink } from "react-router-dom";
+import GoToTop from "../utilities/GoToTop";
 
 let SkillsSection = lazy(() => import("../HomeComponents/SkillsSection"));
 let ProjectsSection = lazy(() => import("../HomeComponents/ProjectsSection"));
@@ -16,17 +12,8 @@ const Home = () => {
   return (
     <section className="w-full  bg-primary lg:flex lg:flex-col cursor-none">
       <HeroSection />
-    
 
-      <NavLink
-        path="/"
-        onClick={() => {
-          window.scrollTo(0, 0);
-        }}
-        className="hidden lg:block fixed bottom-3 right-0 text-6xl  text-gray-300 scrollUp z-50 hover:px-2 hover:py-2 hover:bg-white hover:text-black hover:rounded-[100%] transition-all duration-500 ease-in-out"
-      >
-        <RiArrowUpDoubleFill />
-      </NavLink>
+      <GoToTop />
 
       <Suspense fallback={<Fallback data={"Skill section"} />}>
         <SkillsSection />

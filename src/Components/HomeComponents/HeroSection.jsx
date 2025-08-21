@@ -3,12 +3,10 @@ import user from "../../assets/user.svg";
 import arrow from "../../assets/Vector.svg";
 import { FaDownload } from "react-icons/fa";
 import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
-import { RiArrowUpDoubleFill } from "react-icons/ri";
 import { motion } from "motion/react";
 import { ContainerTextFlip } from "../utilities/ContainerTextFlipProps";
 import { useEffect, useState } from "react";
 import { Button } from "../utilities/Moving-border";
-import { NavLink } from "react-router-dom";
 
 const HeroSection = () => {
   let [isOpen, setIsOpen] = useState(false);
@@ -148,8 +146,9 @@ const HeroSection = () => {
             className="bg-[#161D29] text-white border-slate-800 overflow-hidden "
           >
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1zGc4CoSJM8LPfVzQ48H2RumL7Ioj5Asa/view?usp=drive_link"
               download="Gagan_Baghel_Mern_stack_developer_Resume.pdf"
+              target="_blank"
               className=" w-full  font-serif flex items-center justify-center font-semibold gap-3 cursor-pointer md:text-xl"
             >
               <FaDownload /> Resume

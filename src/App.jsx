@@ -8,7 +8,9 @@ const App = () => {
   return (
     <section className="w-full min-h-screen bg-primary text-white relative">
       <ScrollToTop />
-      <CustomCursor />
+      <section className="hidden md:block">
+        <CustomCursor />
+      </section>
       <NavBarIndex />
       <section className="w-full min-h-[90vh]">
         <Outlet />

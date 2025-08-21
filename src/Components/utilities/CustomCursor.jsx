@@ -38,7 +38,7 @@ const CustomCursor = () => {
           hoveredEl.closest("h2") ||
           hoveredEl.closest("h3") ||
           hoveredEl.closest("li") ||
-          hoveredEl.closest("span"); 
+          hoveredEl.closest("span");
 
         if (cursorRef.current) {
           cursorRef.current.style.background = isLink ? "white" : "transparent";
@@ -63,7 +63,7 @@ const CustomCursor = () => {
   return (
     <div
       ref={cursorRef}
-      className="fixed top-0 left-0 hidden md:block w-5 h-5  rounded-full  mix-blend-difference pointer-events-none z-[9999]"
+      className="fixed top-0 left-0   w-5 h-5  rounded-full  mix-blend-difference pointer-events-none z-[99]"
       style={{
         willChange: "transform",
       }}
