@@ -1,11 +1,12 @@
 import React from "react";
 import { Timeline } from "../utilities/Timeline";
 
-import CompanyLogo from "../../assets/about/Company2024/logo.png";
-import tyss01 from "../../assets/about/Company2024/tyss01.png";
-import tyss02 from "../../assets/about/Company2024/tyss02.png";
-import elp from "../../assets/about/Company2024/elp.png";
-import qsp from "../../assets/about/Company2024/qsp.png";
+import Logo from "../../assets/about/NareshIt/logo.png";
+import CompanyLogo from "../../assets/about/TYSS/logo.png";
+import tyss01 from "../../assets/about/TYSS/tyss01.png";
+import tyss02 from "../../assets/about/TYSS/tyss02.png";
+import elp from "../../assets/about/TYSS/elp.png";
+import qsp from "../../assets/about/TYSS/qsp.png";
 
 import studyNotion from "../../assets/Projects/FullStack/studyNotion.png";
 import cara from "../../assets/Projects/React/cara.png";
@@ -13,6 +14,12 @@ import countryGuide from "../../assets/Projects/React/countryGuide.png";
 import GoToTop from "../utilities/GoToTop";
 
 const About = () => {
+  let currentJob = [
+    {
+      src: Logo,
+      alt: "Naresh IT Logo",
+    },
+  ];
   let firstJob = [
     {
       src: CompanyLogo,
@@ -79,6 +86,42 @@ const About = () => {
   ];
 
   const data = [
+    {
+      title: "Current Job",
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal md:text-lg text-neutral-200 ">
+            Joined
+            <a href="https://nareshit.com/" className="border-b mx-2">
+              Naresh I Technology
+            </a>
+            as an <span className="border-b mx-1">MERN Stack Trainer </span>
+            on Oct. 25th 2025.
+          </p>
+          <ul className="text-sm flex flex-col gap-3 mb-4">
+            <li>
+              ✅ Improve MERN Stack web development, Communication, Concept
+              clarity.
+            </li>
+            <li>✅ Trained more than 500 students.</li>
+          </ul>
+          <div className="grid grid-cols-2 gap-4">
+            {currentJob.map((val) => {
+              return (
+                <img
+                  key={val.src}
+                  src={val.src}
+                  alt={val.alt}
+                  width={500}
+                  height={500}
+                  className="h-20 w-full rounded-lg object-contain bg-white shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+                />
+              );
+            })}
+          </div>
+        </div>
+      ),
+    },
     {
       title: "First Job",
       content: (

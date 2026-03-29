@@ -65,7 +65,7 @@ const HeroSection = () => {
         variants={parentVariant}
         initial={false}
         animate={isOpen ? "open" : "closed"}
-        className="lg:w-[35%] lg:h-[70%] h-[35vh] w-[100vw] relative rounded-xl overflow-hidden "
+        className="lg:w-[35%] lg:h-[70%] h-[35vh] w-screen relative rounded-xl overflow-hidden "
       >
         <motion.img
           variants={childVariant}
@@ -146,7 +146,7 @@ const HeroSection = () => {
             className="bg-[#161D29] text-white border-slate-800 overflow-hidden "
           >
             <a
-              href="https://drive.google.com/file/d/1zGc4CoSJM8LPfVzQ48H2RumL7Ioj5Asa/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1vimc_lNzxHZA07sLBQdodMRfHPr3b8kY/view?usp=drive_link"
               download="Gagan_Baghel_Mern_stack_developer_Resume.pdf"
               target="_blank"
               className=" w-full  font-serif flex items-center justify-center font-semibold gap-3 cursor-pointer md:text-xl"

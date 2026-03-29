@@ -21,7 +21,7 @@ const NavBarIndex = () => {
             <section className='w-full flex justify-between h-[10vh] items-center md:px-10 px-3 sticky top-0 bg-primary z-100'>
                 <Logo />
                 <MenuSection />
-                <motion.section className='w-full h-[2px] bg-slate-700 fixed top-[10vh] left-0 origin-left'
+                <motion.section className='w-full h-0.5 bg-slate-700 fixed top-[10vh] left-0 origin-left'
                     style={{
                         scaleX: scrollYProgress
                     }}
